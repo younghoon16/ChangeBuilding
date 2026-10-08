@@ -38,7 +38,7 @@ Captioning (BSCDC)**, which simultaneously outputs
   and density* — merged into a single sentence.
 
 <p align="center">
-  <img src="img/overall1.png" width="100%">
+  <img src="overall1.png" width="100%">
   <br><b>Fig. 1</b> — Overall architecture of ChangeBuilding. Bi-temporal images pass through weight-shared feature
   extraction; the detection stream is enhanced by STPE and decoded by an FCN head into a semantic change map
   (red: demolished, blue: newly built) under <i>L</i><sub>det</sub>; the caption stream, guided by the STPE weight map,
@@ -70,7 +70,7 @@ two-stage projector pre-training that is executed *once* and never alternates be
 in contrast to the task-alternating multi-stage schedules of MCINet and Semantic-CC.
 
 <p align="center">
-  <img src="img/training.png" width="85%">
+  <img src="training.png" width="85%">
   <br><b>Fig. 2</b> — Comparison of training strategies. Top: the multi-stage schedule of MCINet; bottom: our
   single-stage strategy with MTGA.
 </p>
@@ -78,7 +78,7 @@ in contrast to the task-alternating multi-stage schedules of MCINet and Semantic
 ### 2.2 Multi-Task Gated Adapter (MTGA)
 
 <p align="center">
-  <img src="img/mgta1.png" width="100%">
+  <img src="mgta1.png" width="100%">
   <br><b>Fig. 3</b> — Flowchart of the MTGA module. A frozen DINOv3 extracts deep semantic features which are
   replicated four times and projected into multi-scale features by the Multi-Scale Adapter Module (MSAM); in
   parallel a lightweight MobileNetV2 stream extracts hierarchical features aggregated by an FPN. The two streams
@@ -89,7 +89,7 @@ in contrast to the task-alternating multi-stage schedules of MCINet and Semantic
 ### 2.3 Single-Temporal Phase Enhancement (STPE)
 
 <p align="center">
-  <img src="img/stpe.png" height="320">
+  <img src="stpe.png" height="320">
   <br><b>Fig. 4</b> — The STPE module. Unlike magnitude-based difference extractors, STPE models temporal phase
   shifts by exploiting signed raw differences and semantic cosine similarity, yielding polarity-aware
   representations that sharply separate construction from demolition.
@@ -98,7 +98,7 @@ in contrast to the task-alternating multi-stage schedules of MCINet and Semantic
 ### 2.4 Change-Detection-Captioning Transformer (CDC-Former)
 
 <p align="center">
-  <img src="img/cdcformer.png" height="320">
+  <img src="cdcformer.png" height="320">
   <br><b>Fig. 5</b> — The CDC-Former module. The difference-enhanced map produced by STPE is injected as explicit
   spatial attention priors, directing the learnable queries towards semantically salient change regions before
   projection into the text embedding space of the frozen OPT-2.7B LLM.
