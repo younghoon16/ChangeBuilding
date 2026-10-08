@@ -42,3 +42,7 @@ pretrained/
 *.xz
 *.7z
 *.rar
+
+/*.csv
+/*.txt
+/*.json
