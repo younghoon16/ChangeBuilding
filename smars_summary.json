@@ -1,0 +1,64 @@
+{
+  "n_samples": 707,
+  "n_all_dimensions_correct": 259,
+  "macro_accuracy": 0.6403873141736885,
+  "no_change": {
+    "n_gt": 72,
+    "n_pred": 72,
+    "n_correct": 71,
+    "recall": 0.9861111111111112,
+    "precision": 0.9861111111111112
+  },
+  "type_on_changed_only": {
+    "n": 635,
+    "hit": 629,
+    "accuracy": 0.9905511811023622
+  },
+  "rules": {
+    "Type": {
+      "n_gt": 707,
+      "n_pred": 707,
+      "n_hit": 700,
+      "n_partial": 0,
+      "accuracy": 0.9900990099009901,
+      "strict_accuracy": 0.9900990099009901,
+      "coverage": 1.0
+    },
+    "Amount": {
+      "n_gt": 80,
+      "n_pred": 43,
+      "n_hit": 17,
+      "n_partial": 0,
+      "accuracy": 0.2125,
+      "strict_accuracy": 0.2125,
+      "coverage": 0.5375
+    },
+    "Position": {
+      "n_gt": 555,
+      "n_pred": 534,
+      "n_hit": 229,
+      "n_partial": 0,
+      "accuracy": 0.4126126126126126,
+      "strict_accuracy": 0.4126126126126126,
+      "coverage": 0.9621621621621622
+    },
+    "Background": {
+      "n_gt": 635,
+      "n_pred": 635,
+      "n_hit": 385,
+      "n_partial": 219,
+      "accuracy": 0.778740157480315,
+      "strict_accuracy": 0.6062992125984252,
+      "coverage": 1.0
+    },
+    "Density": {
+      "n_gt": 526,
+      "n_pred": 541,
+      "n_hit": 425,
+      "n_partial": 0,
+      "accuracy": 0.8079847908745247,
+      "strict_accuracy": 0.8079847908745247,
+      "coverage": 1
+    }
+  }
+}

@@ -1,0 +1,44 @@
+# 忽略指定后缀的文件夹
+*_ckpt/
+*_dino/
+*_result/
+*_semantic/
+*_mci/
+*_ori/
+*-cc/
+pretrained/
+
+# 忽略图片文件
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+*.webp
+*.svg
+*.ico
+*.Identifier
+.DS_Store
+
+
+# 忽略权重文件
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+*.h5
+*.pdparams
+*.onnx
+*.weights
+*.msgpack
+
+# 忽略压缩包
+*.zip
+*.tar
+*.gz
+*.bz2
+*.xz
+*.7z
+*.rar

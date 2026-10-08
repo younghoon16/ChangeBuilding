@@ -1,0 +1,11 @@
+python train_dino.py \
+--data_name LsSCD_MCI \
+--list_path ../../LsSCD-Ex/ \
+--gpu_ids '1' \
+--network mobilenetv2 \
+--train_batchsize 16 \
+--num_heads 8 \
+--encoder_lr 5e-4 \
+--data_folder ../../LsSCD-Ex-dataset/images/ \
+--token_folder ../../LsSCD-Ex/tokens/ \
+--savepath ./LsSCD-Ex_ckpt/

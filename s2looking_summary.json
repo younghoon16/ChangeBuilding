@@ -1,0 +1,64 @@
+{
+  "n_samples": 4000,
+  "n_all_dimensions_correct": 1974,
+  "macro_accuracy": 0.39878091409527217,
+  "no_change": {
+    "n_gt": 2096,
+    "n_pred": 2302,
+    "n_correct": 1752,
+    "recall": 0.8358778625954199,
+    "precision": 0.7610773240660296
+  },
+  "type_on_changed_only": {
+    "n": 1904,
+    "hit": 1037,
+    "accuracy": 0.5446428571428571
+  },
+  "rules": {
+    "Type": {
+      "n_gt": 4000,
+      "n_pred": 4000,
+      "n_hit": 2789,
+      "n_partial": 0,
+      "accuracy": 0.69725,
+      "strict_accuracy": 0.69725,
+      "coverage": 1.0
+    },
+    "Amount": {
+      "n_gt": 262,
+      "n_pred": 269,
+      "n_hit": 70,
+      "n_partial": 0,
+      "accuracy": 0.26717557251908397,
+      "strict_accuracy": 0.26717557251908397,
+      "coverage": 1
+    },
+    "Position": {
+      "n_gt": 1786,
+      "n_pred": 1590,
+      "n_hit": 412,
+      "n_partial": 0,
+      "accuracy": 0.23068309070548712,
+      "strict_accuracy": 0.23068309070548712,
+      "coverage": 0.8902575587905935
+    },
+    "Background": {
+      "n_gt": 1904,
+      "n_pred": 1698,
+      "n_hit": 856,
+      "n_partial": 131,
+      "accuracy": 0.4839810924369748,
+      "strict_accuracy": 0.4495798319327731,
+      "coverage": 0.8918067226890757
+    },
+    "Density": {
+      "n_gt": 702,
+      "n_pred": 497,
+      "n_hit": 221,
+      "n_partial": 0,
+      "accuracy": 0.3148148148148148,
+      "strict_accuracy": 0.3148148148148148,
+      "coverage": 0.707977207977208
+    }
+  }
+}
